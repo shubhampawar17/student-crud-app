@@ -1,0 +1,60 @@
+<!-- src/app/add-student/add-student.component.html -->
+<div class="container mt-5">
+  <h2>Add Student</h2>
+  <form (ngSubmit)="addStudent()">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" class="form-control" [(ngModel)]="student.name" name="name" required />
+    </div>
+    <div class="form-group">
+      <label for="age">Age:</label>
+      <input type="number" id="age" class="form-control" [(ngModel)]="student.age" name="age" required />
+    </div>
+    <div class="form-group">
+      <label for="grade">Grade:</label>
+      <input type="text" id="grade" class="form-control" [(ngModel)]="student.grade" name="grade" required />
+    </div>
+    <button type="submit" class="btn btn-primary mt-3">Add Student</button>
+  </form>
+</div>
+
+
+<!-- <h2 mat-dialog-title>Add Student</h2>
+<mat-dialog-content>
+  <mat-form-field appearance="fill">
+    <mat-label>Name</mat-label>
+    <input matInput [(ngModel)]="student.name" />
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Age</mat-label>
+    <input matInput type="number" [(ngModel)]="student.age" />
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Grade</mat-label>
+    <input matInput [(ngModel)]="student.grade" />
+  </mat-form-field>
+</mat-dialog-content>
+
+<mat-dialog-actions>
+  <button mat-button (click)="dialogRef.close()">Cancel</button>
+  <button mat-button (click)="addStudent()">Add</button>
+</mat-dialog-actions> -->
+
+<!-- <form [formGroup]="newStudentForm" (ngSubmit)="addNewStudent()">
+    <input type="number" placeholder="Enter RollNo" formControlName="rollNo">
+    <br>
+    <input type="text" placeholder="Enter Name" formControlName="name">
+    <br>
+    <input type="number" placeholder="Enter Age" formControlName="age">
+    <br>
+    <input type="text" placeholder="Enter Email" formControlName="email">
+    <br>
+    <input type="date" placeholder="Enter Date" formControlName="date">
+    <br>
+    <input type="checkbox" formControlName="isMale">isMale
+    <br>
+    <button>Add</button>
+</form>
+<a routerLink="/showStudent">Back to Student List</a> -->
